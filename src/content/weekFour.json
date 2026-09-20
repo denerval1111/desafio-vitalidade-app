@@ -1,0 +1,99 @@
+{
+  "id": "week-4-source",
+  "title": "Desafio Vitalidade — Semana 4",
+  "subtitle": "Encerramento: integração, continuidade e legado de hábitos",
+  "responsibleUse": "Conteúdo educativo para adultos, inclusive pessoas com condições crônicas. Escolha práticas confortáveis, breves e adaptadas ao seu contexto; pare se houver dor, tontura, falta de ar, mal-estar ou piora de sintomas. Alimentação, sono, movimento, manejo do peso, saúde mental e recuperação devem respeitar diagnóstico, medicamentos, limitações funcionais e plano de cuidado. Jejum, suplementação, exposição ao frio, desintoxicação, exercício intenso e técnicas respiratórias estruturadas não são práticas padrão deste roteiro e só devem ser considerados de forma individualizada com orientação de profissional habilitado. Este roteiro não substitui acompanhamento médico, nutricional, psicológico ou psiquiátrico.",
+  "days": [
+    {
+      "day": 22,
+      "title": "O despertar do líder",
+      "theme": "Reconhecer a própria jornada e influenciar pelo exemplo, integrando presença emocional, escolhas alimentares, recuperação não intervencionista e movimento possível.",
+      "morning": "Comece com dois minutos sentado ou em pé de modo confortável. Reconheça uma pequena mudança que deseja sustentar e escolha uma intenção simples: agir hoje com respeito ao próprio corpo e às outras pessoas.",
+      "throughoutDay": [
+        "Antes de uma decisão rotineira, faça uma pausa e pergunte: “Qual escolha é coerente com o cuidado que quero praticar hoje?”",
+        "Em uma refeição, observe fome, saciedade e contexto antes de escolher; priorize uma opção que combine com seu plano alimentar e suas necessidades.",
+        "Inclua uma mudança suave de posição ou uma caminhada curta, se for segura para você; se não for, faça uma pausa de conforto e ajuste postural."
+      ],
+      "evening": "Registre uma situação em que foi coerente com seus valores e uma oportunidade de agir com mais gentileza amanhã. Encerre reduzindo estímulos conforme sua rotina de sono.",
+      "reflection": "Como posso inspirar sem me cobrar perfeição nem impor escolhas a outras pessoas?"
+    },
+    {
+      "day": 23,
+      "title": "Mastery energético",
+      "theme": "Observar padrões de energia e organizar pausas, alimentação e recuperação de forma sustentável, sem buscar atalhos ou estímulos intensos.",
+      "morning": "Faça um check-in breve: como está sua disposição, seu humor e seu corpo ao acordar? Beba água conforme a sua orientação habitual e escolha uma prioridade realista para o dia.",
+      "throughoutDay": [
+        "Em um intervalo conveniente, afaste-se por alguns instantes da tarefa e note tensão, fadiga ou necessidade de apoio; escolha uma pausa silenciosa, alongamento confortável ou mudança de ambiente.",
+        "Antes do almoço ou lanche, avalie sua energia e planeje uma refeição compatível com o seu acompanhamento nutricional, em vez de compensar cansaço com restrição ou excessos.",
+        "Ofereça ao cérebro uma renovação leve: observe algo ao redor, faça uma tarefa curta de atenção ou converse com alguém de confiança, sem forçar desempenho."
+      ],
+      "evening": "Identifique um momento de maior disposição e um de menor disposição. Escolha apenas um ajuste possível para amanhã, como programar uma pausa ou proteger o horário de descanso.",
+      "reflection": "Que rotina simples parece apoiar minha energia sem ultrapassar meus limites?"
+    },
+    {
+      "day": 24,
+      "title": "Regeneração suprema",
+      "theme": "Valorizar recuperação não intervencionista: descanso, ritmo diário, conforto corporal e redução de sobrecarga como bases de cuidado continuado.",
+      "morning": "Ao acordar, observe como o corpo se sente e planeje o dia considerando seu nível atual de energia. Se desejar e for confortável, faça mobilidade leve de pescoço, ombros ou mãos, sem dor e sem forçar amplitude.",
+      "throughoutDay": [
+        "Crie uma pequena transição entre tarefas: diminua o ritmo por um minuto, relaxe a mandíbula e solte os ombros.",
+        "Organize água, refeições e medicações prescritas de acordo com sua rotina e orientações profissionais; não use jejum, suplementos ou protocolos de “detox” como padrão.",
+        "Escolha uma ação de recuperação acessível, como sentar com apoio, fazer uma pausa visual, pedir ajuda ou simplificar uma tarefa quando houver sinais de sobrecarga."
+      ],
+      "evening": "Prepare o descanso com um ritual simples e previsível: luz mais baixa, itens do dia seguinte separados ou alguns minutos de leitura tranquila, conforme for viável.",
+      "reflection": "Qual sinal do meu corpo merece mais atenção e qual forma segura de recuperação posso oferecer a ele?"
+    },
+    {
+      "day": 25,
+      "title": "Sabedoria nutricional",
+      "theme": "Fortalecer uma relação flexível e consciente com a alimentação, alinhada à nutrologia, ao prazer e às necessidades individuais.",
+      "morning": "Observe sua fome, apetite e rotina antes da primeira refeição. Planeje uma escolha possível, incluindo variedade quando compatível com sua condição, preferências e orientação nutricional.",
+      "throughoutDay": [
+        "Faça uma refeição ou lanche com menos distrações por alguns minutos, percebendo sabor, textura e satisfação.",
+        "Monte ou ajuste uma escolha alimentar a partir do que está disponível, buscando regularidade e adequação em vez de regras rígidas ou compensações.",
+        "Anote, mentalmente ou no app, um fator que influenciou sua alimentação hoje — fome, horário, emoção, ambiente ou companhia — sem julgamento."
+      ],
+      "evening": "Revise uma escolha alimentar que funcionou e uma situação difícil. Planeje uma alternativa prática para amanhã, sem iniciar restrição, jejum ou suplemento por conta própria.",
+      "reflection": "Que escolha alimentar me trouxe nutrição, satisfação e respeito às minhas necessidades hoje?"
+    },
+    {
+      "day": 26,
+      "title": "Movimento inspirador",
+      "theme": "Tratar o movimento como cuidado funcional e prazeroso, com adaptação de intensidade para apoiar bem-estar e gerenciamento do peso sem punição.",
+      "morning": "Escolha um movimento cotidiano e seguro que caiba no seu momento: levantar e sentar com apoio, mobilizar articulações, caminhar poucos passos ou realizar movimentos sentados. Mantenha apenas o que for confortável.",
+      "throughoutDay": [
+        "Interrompa um período prolongado na mesma posição com uma mudança de postura ou deslocamento breve, se isso for seguro para você.",
+        "Associe movimento a uma atividade diária, como caminhar até buscar água, fazer tarefas leves ou movimentar braços e pernas enquanto está sentado.",
+        "Convide alguém para uma atividade leve e acessível, ou compartilhe uma adaptação que tornou seu dia mais ativo, sem comparar ritmos ou capacidades."
+      ],
+      "evening": "Observe qual tipo de movimento foi mais agradável ou útil. Faça, se desejar, alguns movimentos lentos de conforto ou simplesmente escolha repouso para encerrar o dia.",
+      "reflection": "Qual movimento respeitou meu corpo hoje e eu conseguiria repetir sem transformar isso em cobrança?"
+    },
+    {
+      "day": 27,
+      "title": "Liderança transformadora",
+      "theme": "Exercer influência compassiva pelo exemplo, apoiando saúde mental e relações sem assumir o papel de profissional de saúde de outras pessoas.",
+      "morning": "Defina uma intenção relacional para o dia, como escutar com atenção, comunicar um limite ou oferecer apoio sem dar conselhos não solicitados.",
+      "throughoutDay": [
+        "Em uma conversa, pratique presença: deixe a outra pessoa concluir, valide sua experiência e responda com respeito.",
+        "Mostre uma escolha de autocuidado de forma discreta — uma pausa, uma refeição planejada ou um limite de horário — sem esperar que outros façam o mesmo.",
+        "Quando notar estresse, escolha uma ação de regulação compatível com você, como reduzir estímulos, tomar um tempo em silêncio ou procurar apoio; técnicas respiratórias específicas são opcionais e devem ser adaptadas com orientação quando necessário."
+      ],
+      "evening": "Relembre uma interação em que agiu com autenticidade e compaixão. Planeje uma forma concreta de apoio ou de pedido de ajuda para amanhã.",
+      "reflection": "Como meu exemplo pode criar um ambiente mais seguro, realista e acolhedor para mim e para os outros?"
+    },
+    {
+      "day": 28,
+      "title": "Celebração e legado",
+      "theme": "Encerrar a semana reconhecendo avanços, integrar os quatro pilares e transformar aprendizados em um plano de continuidade flexível.",
+      "morning": "Reconheça um esforço ou aprendizado da jornada. Escolha uma prática breve de cada pilar para valorizar hoje: uma pausa de presença, uma escolha alimentar planejada, uma ação de recuperação e um movimento possível.",
+      "throughoutDay": [
+        "Compartilhe uma conquista ou aprendizado com uma pessoa de confiança, se isso fizer sentido, sem prometer resultados nem recomendar protocolos universais.",
+        "Escreva três práticas que deseja manter: uma para saúde mental, uma para nutrição e peso, e uma para recuperação ou movimento; ajuste-as à sua realidade clínica e social.",
+        "Marque um gesto de encerramento significativo e acessível, como agradecer alguém, organizar um lembrete de cuidado ou reservar um momento agradável de descanso."
+      ],
+      "evening": "Faça uma revisão gentil: celebre o que foi possível, identifique o que precisa de adaptação e escolha a menor próxima ação para a semana seguinte. Se houver necessidades persistentes de saúde física ou mental, inclua a busca de cuidado profissional no plano.",
+      "reflection": "Quais hábitos pequenos, seguros e significativos quero levar adiante — e que apoio preciso para sustentá-los?"
+    }
+  ]
+}

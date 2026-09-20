@@ -1,0 +1,99 @@
+{
+  "id": "week-3",
+  "title": "Semana 3 — Autonomia, adaptação e integração",
+  "subtitle": "Sete dias para tornar escolhas de bem-estar mais flexíveis, conscientes e possíveis na vida real.",
+  "responsibleUse": "Conteúdo educativo inspirado exclusivamente no e-book da Semana 3. As sugestões são gerais e devem ser adaptadas ao estado de saúde, à mobilidade, aos medicamentos, à rotina alimentar e às preferências de cada pessoa. Para condições crônicas, gestação, histórico de transtorno alimentar, sintomas novos ou piora de sintomas, priorize o plano da equipe de saúde. Pare qualquer prática que cause dor, tontura, falta de ar, mal-estar ou sofrimento emocional. Jejum, exposição ao frio, suplementos, exercício vigoroso, promessas de ‘desintoxicação’ e exercícios respiratórios com retenção ou esforço não são práticas universais; só devem ser considerados quando forem apropriados e orientados por profissional qualificado. O pilar de medicina regenerativa é apresentado aqui de modo não intervencionista, com foco em sono, pausas, conforto e recuperação cotidiana.",
+  "days": [
+    {
+      "day": 15,
+      "title": "Otimização inteligente",
+      "theme": "Encontrar o essencial em dias cheios: pausas de recuperação não intervencionista, alimentação prática, atenção ao estado mental e escolhas de peso alinhadas à fome e à saciedade, sem buscar perfeição.",
+      "morning": "Faça um check-in de um minuto: energia, humor, desconfortos e agenda. Escolha uma prioridade realista, faça mobilidade suave dentro do conforto e planeje uma primeira refeição ou hidratação compatível com seu plano de cuidado.",
+      "throughoutDay": [
+        "Em uma transição de tarefa, pare por um minuto, relaxe ombros e mandíbula e retome com uma única intenção.",
+        "Antes de um lanche ou refeição, observe fome, sede e contexto; escolha a opção disponível que ofereça mais sustentação e coma sem pressa quando possível.",
+        "A cada período prolongado sentado, levante ou mude de posição por alguns instantes; use movimentos leves e seguros para o seu corpo."
+      ],
+      "evening": "Faça uma desaceleração breve: reduza estímulos, organize o necessário para amanhã e escolha uma rotina de sono viável. Se desejar, registre uma adaptação que economizou energia sem comprometer seu cuidado.",
+      "reflection": "Qual pequena prática trouxe mais apoio ao meu dia, e como posso torná-la ainda mais simples amanhã?"
+    },
+    {
+      "day": 16,
+      "title": "Adaptabilidade resiliente",
+      "theme": "Manter os princípios dos quatro pilares quando o ambiente muda: recuperação portátil e não intervencionista, nutrição possível, regulação emocional e movimento/peso corporal compatíveis com espaço, energia e limitações.",
+      "morning": "Observe o ambiente e antecipe um desafio provável. Defina o mínimo que deseja preservar hoje — por exemplo, uma pausa, uma escolha alimentar planejada e um momento de descanso — e escolha uma alternativa caso os planos mudem.",
+      "throughoutDay": [
+        "Quando houver mudança de planos, nomeie o que aconteceu, identifique o que está sob seu controle e escolha o próximo passo mais gentil e possível.",
+        "Em local com poucas opções de comida, procure compor a melhor alternativa disponível e retome sua rotina habitual na próxima oportunidade, sem compensações punitivas.",
+        "Em espaço reduzido, faça mobilidade discreta de pescoço, ombros, mãos ou tornozelos, apenas na amplitude confortável."
+      ],
+      "evening": "Faça um balanço sem julgamento: reconheça o que funcionou no cenário real e prepare um recurso simples para amanhã, como água, um alimento habitual ou uma pausa na agenda.",
+      "reflection": "Que adaptação me ajudou a cuidar de mim hoje sem exigir condições ideais?"
+    },
+    {
+      "day": 17,
+      "title": "Integração social",
+      "theme": "Levar os quatro pilares para relações, trabalho e família com respeito: ambientes e descansos mais acolhedores, alimentação social flexível, presença emocional e movimento inclusivo, sem impor escolhas nem metas de peso.",
+      "morning": "Escolha uma intenção social concreta, como escutar com atenção, respeitar um limite ou convidar alguém para uma atividade tranquila. Ajuste a postura para ficar confortável e acolhedora, sem esforço.",
+      "throughoutDay": [
+        "Antes de responder em uma conversa tensa, faça uma pausa natural e formule uma resposta curiosa e respeitosa.",
+        "Em uma refeição social, priorize a convivência e observe seu conforto, fome e saciedade; faça escolhas possíveis sem comentar ou controlar o prato de outras pessoas.",
+        "Se houver oportunidade e consentimento, proponha uma caminhada leve, uma pausa para alongar ou outra atividade inclusiva, aceitando diferentes ritmos."
+      ],
+      "evening": "Reconheça uma interação em que você foi um exemplo de cuidado sem pregação. Prepare uma opção simples para facilitar a próxima refeição ou descanso compartilhado.",
+      "reflection": "Como mantive meu cuidado pessoal e, ao mesmo tempo, respeitei a autonomia de quem estava comigo?"
+    },
+    {
+      "day": 18,
+      "title": "Performance sustentável",
+      "theme": "Relacionar produtividade a cuidado contínuo: pausas e sono para recuperação não intervencionista, alimentação que favoreça conforto e regularidade, clareza mental e manejo de peso sem restrição compensatória ou desempenho a qualquer custo.",
+      "morning": "Defina até três prioridades e um ponto de pausa entre elas. Faça alguns movimentos articulares suaves e planeje como terá acesso a alimento e líquidos conforme suas necessidades e orientações de saúde.",
+      "throughoutDay": [
+        "Antes de uma tarefa que exige atenção, reduza distrações por alguns minutos e escolha o primeiro passo concreto.",
+        "Quando notar queda de energia, diferencie cansaço, fome, sede, estresse ou necessidade de pausa antes de decidir o que fazer.",
+        "Entre blocos de trabalho, mude de postura, olhe para longe ou caminhe brevemente em ritmo confortável, se for seguro."
+      ],
+      "evening": "Encerre o trabalho com uma lista curta do que fica para amanhã. Dê preferência a uma refeição e a um ritual de sono que sejam satisfatórios e compatíveis com sua rotina, sem regras rígidas.",
+      "reflection": "O que sustentou meu foco hoje e que sinal indicou que era hora de reduzir o ritmo ou recuperar?"
+    },
+    {
+      "day": 19,
+      "title": "Flexibilidade estratégica",
+      "theme": "Trocar rigidez por planos alternativos nos quatro pilares: recuperação e sono ajustáveis, nutrição com opções A/B/C, regulação mental diante do imprevisto e movimento adaptado ao contexto e ao manejo de peso centrado no bem-estar.",
+      "morning": "Revise a agenda e escolha um plano A e um plano B de autocuidado. Mantenha o plano pequeno: por exemplo, uma pausa, uma refeição possível e um horário de desaceleração.",
+      "throughoutDay": [
+        "Diante de um imprevisto, reconheça a frustração e reformule a pergunta para: ‘Qual é a menor ação útil agora?’.",
+        "Se a refeição planejada não for possível, escolha o melhor disponível e evite jejum, restrição ou compensação por conta própria.",
+        "Se o movimento programado não couber no dia, prefira alguns minutos de mobilidade leve, uma tarefa doméstica confortável ou repouso quando o corpo pedir."
+      ],
+      "evening": "Escolha uma ação de reparo simples para amanhã, sem tentar compensar o dia: preparar um item prático, ajustar a agenda ou reservar uma pausa.",
+      "reflection": "Em que momento fui flexível sem abandonar o que é importante para meu bem-estar?"
+    },
+    {
+      "day": 20,
+      "title": "Autonomia avançada",
+      "theme": "Construir autogestão responsável nos quatro pilares: observar sinais ligados ao sono e à recuperação, fazer escolhas alimentares conscientes, reconhecer necessidades emocionais e ajustar movimento e metas de peso com apoio profissional quando necessário.",
+      "morning": "Faça um check-in de energia, humor, corpo e clareza mental. A partir dele, escolha uma prática proporcional ao dia: movimento leve, pausa de recuperação, apoio emocional, alimentação regular ou contato com sua equipe de cuidado.",
+      "throughoutDay": [
+        "A cada transição importante, pergunte: ‘Do que preciso agora — água, alimento, pausa, movimento suave, conexão ou ajuda?’ e aja de forma segura.",
+        "Ao comer, observe fome, saciedade, preferências e orientações clínicas; trate esses sinais como informações, não como teste de força de vontade.",
+        "Se houver rigidez ou inquietação, escolha uma opção de baixo risco, como mudar de posição, alongar suavemente ou descansar alguns minutos."
+      ],
+      "evening": "Revise uma decisão que tomou de modo independente. Registre o efeito percebido e um ajuste para a próxima vez; dúvidas persistentes são um bom motivo para buscar orientação qualificada.",
+      "reflection": "Que sinais internos consegui perceber hoje, e que tipo de apoio ainda preciso para decidir com segurança?"
+    },
+    {
+      "day": 21,
+      "title": "Síntese evolutiva",
+      "theme": "Consolidar a jornada: integrar recuperação não intervencionista, nutrição sustentável, saúde mental e movimento/manejo de peso em uma rotina pessoal, socialmente viável e preparada para continuar evoluindo.",
+      "morning": "Reconheça uma mudança pequena das últimas semanas e escolha uma prática de cada pilar que seja realista manter: pausa ou sono, alimentação, cuidado mental e movimento adequado às suas condições.",
+      "throughoutDay": [
+        "Em um momento de transição, recorde uma estratégia que funcionou para você e aplique-a no contexto atual.",
+        "Em uma refeição, escolha com atenção ao conforto, à saciedade e ao que está acessível, valorizando consistência em vez de regras perfeitas.",
+        "Escolha uma forma segura de recuperação ou movimento para hoje — uma pausa, mobilidade leve, caminhada confortável ou descanso — conforme seus sinais e orientações."
+      ],
+      "evening": "Faça uma síntese breve: celebre um aprendizado, escolha um ajuste de rotina e defina um compromisso sustentável para a próxima semana. Planeje procurar suporte profissional para quaisquer metas ou sintomas que ultrapassem o autocuidado geral.",
+      "reflection": "Quais práticas quero levar adiante porque se encaixam na minha vida, nos meus valores e nas minhas necessidades de saúde?"
+    }
+  ]
+}

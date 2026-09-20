@@ -1,0 +1,99 @@
+{
+  "id": "week-2-source",
+  "title": "Semana 2 — Evolução do Corpo",
+  "subtitle": "Consciência, energia, rotinas, conexão, força e integração com escolhas personalizadas.",
+  "responsibleUse": "Conteúdo educativo para apoiar hábitos, não substitui avaliação, diagnóstico ou tratamento. As práticas foram reduzidas a opções de baixo risco e devem ser ajustadas à mobilidade, ao sono, aos medicamentos, à gestação, à saúde mental e às condições crônicas de cada pessoa. Jejum, restrição alimentar, exposição ao frio/calor, suplementação, ‘detox’, exercício intenso e técnicas respiratórias com hiperventilação ou retenção não são recomendações padrão deste percurso: só considerar quando forem individualmente apropriados e houver orientação de profissional habilitado. Interrompa qualquer prática que cause dor, tontura, falta de ar, angústia ou piora de sintomas; em transtornos alimentares, trauma, sintomas psiquiátricos ou condições clínicas, priorize o plano da equipe de saúde.",
+  "days": [
+    {
+      "day": 8,
+      "title": "Expansão da Consciência",
+      "theme": "A progressão começa aprofundando atenção e autopercepção. Saúde mental/psiquiatria: mindfulness e regulação emocional gentil; nutrologia: observar a experiência de comer; medicina regenerativa não intervencionista: sono, pausa e recuperação como base; gerenciamento do peso: escolhas alimentares conscientes, sem restrição ou metas corporais.",
+      "morning": "Sente-se ou fique em pé com apoio e dedique 3 a 5 minutos a notar um ponto, som ou sensação neutra. Quando a mente se dispersar, retorne sem julgamento; finalize com mobilidade suave de ombros, mãos e tornozelos conforme confortável.",
+      "throughoutDay": [
+        "Faça uma pausa de um minuto para notar cinco detalhes do ambiente e escolher uma intenção simples para a próxima tarefa.",
+        "Em uma refeição, observe cor, aroma e sabor dos primeiros bocados e faça uma breve pausa para perceber fome, satisfação e conforto.",
+        "Escolha um movimento coordenado seguro, como alternar toques das mãos nas coxas sentado ou marchar com apoio por um minuto; pare se houver instabilidade."
+      ],
+      "evening": "Reserve cinco minutos sem telas para observar pensamentos e emoções como eventos passageiros. Anote uma qualidade que deseja praticar amanhã, em termos concretos e alcançáveis.",
+      "reflection": "Em que momento consegui retornar a atenção com mais gentileza, e que escolha de cuidado quero repetir?"
+    },
+    {
+      "day": 9,
+      "title": "Otimização Energética",
+      "theme": "O foco avança para reconhecer ritmos pessoais de energia. Saúde mental/psiquiatria: identificar sobrecarga e pausas reguladoras; nutrologia: regularidade e composição suficiente das refeições; medicina regenerativa não intervencionista: recuperação, hidratação e sono; gerenciamento do peso: energia sustentável sem jejum, restrição ou compensação.",
+      "morning": "Faça um check-in de energia de 0 a 10, beba água conforme sede e rotina clínica, e realize dois a cinco minutos de mobilidade lenta ou caminhada leve no próprio espaço. Respire naturalmente, sem retenções, aceleração ou exercícios respiratórios intensos.",
+      "throughoutDay": [
+        "Quando a energia cair, ajuste postura, olhe para longe e faça uma pausa breve com respiração natural antes de retomar a tarefa.",
+        "Antes de uma refeição ou lanche, pergunte-se do que precisa para seguir o dia com conforto; priorize uma opção disponível e compatível com seu plano alimentar.",
+        "Registre em uma palavra o horário de mais e de menos energia para reconhecer padrões, sem se cobrar produtividade constante."
+      ],
+      "evening": "Reduza estímulos no fim do dia e faça uma revisão curta: o que sustentou sua energia e o que a drenou? Escolha uma pequena adaptação para amanhã, como preparar uma opção de refeição ou reservar uma pausa.",
+      "reflection": "Qual diferença notei entre estar apenas estimulado e sentir energia estável e suficiente?"
+    },
+    {
+      "day": 10,
+      "title": "Purificação Profunda",
+      "theme": "O tema é reformulado como redução de sobrecarga e apoio às rotinas naturais do corpo, sem promessas de ‘detox’. Saúde mental/psiquiatria: descarregar pensamentos de modo seguro; nutrologia: variedade, fibras e hidratação individualizada; medicina regenerativa não intervencionista: descanso e ambiente favorável; gerenciamento do peso: cuidado regular, sem limpezas, jejuns ou restrições compensatórias.",
+      "morning": "Comece com higiene habitual, água ou bebida de sua preferência compatível com suas orientações de saúde, e três minutos de mobilidade confortável. Escolha uma intenção de simplificação, como reduzir uma fonte de excesso de tela ou organizar o próximo lanche.",
+      "throughoutDay": [
+        "Faça uma pausa de tela de dois minutos: descanse os olhos, pisque, olhe para uma distância confortável e perceba o ambiente.",
+        "Inclua, se for acessível e adequado ao seu plano, um alimento minimamente processado que já tolere bem, como fruta, legume, feijão, aveia ou outra fonte de fibra.",
+        "Ao notar uma emoção difícil, nomeie-a e escreva uma frase sobre o que precisa agora; se houver sofrimento intenso, busque apoio em vez de tentar administrá-lo sozinho."
+      ],
+      "evening": "Crie um encerramento simples: diminua telas, ventile ou organize o quarto se isso for possível e escreva o que deseja deixar para amanhã. Não use banhos extremos, suplementos, laxantes, jejum ou protocolos de desintoxicação como rotina de aplicativo.",
+      "reflection": "Que tipo de sobrecarga — digital, emocional, de agenda ou alimentar — posso reduzir com uma escolha realista e respeitosa?"
+    },
+    {
+      "day": 11,
+      "title": "Sincronização Circadiana",
+      "theme": "A semana conecta hábitos ao ritmo diário. Saúde mental/psiquiatria: rotinas previsíveis e redução de estímulos; nutrologia: perceber horários que favorecem conforto e regularidade; medicina regenerativa não intervencionista: luz diurna, descanso e sono; gerenciamento do peso: planejamento de refeições sem prescrever janelas de jejum.",
+      "morning": "Procure luz natural de forma segura, perto de uma janela ou ao ar livre, sem olhar diretamente para o sol, e combine-a com alguns movimentos articulares suaves. Observe como acordou e escolha uma prioridade compatível com sua energia.",
+      "throughoutDay": [
+        "No início do dia, confira um horário possível para a próxima refeição, pausa e sono, considerando trabalho, medicamentos e necessidades pessoais.",
+        "Faça uma breve pausa em local iluminado ou perto de uma janela e movimente-se suavemente conforme capacidade.",
+        "No fim da tarde, reduza gradualmente notificações e estímulos desnecessários para marcar a transição para a noite."
+      ],
+      "evening": "Repita um sinal de desaceleração que seja viável, como luz mais baixa, leitura tranquila, higiene ou música calma. Mantenha os horários tão consistentes quanto sua realidade permitir, inclusive para trabalho em turnos.",
+      "reflection": "Que sinal do meu ambiente ou da minha rotina torna mais fácil perceber que é hora de desacelerar?"
+    },
+    {
+      "day": 12,
+      "title": "Conexão Profunda",
+      "theme": "A progressão aprofunda a escuta do corpo e a relação com a comida. Saúde mental/psiquiatria: autocompaixão e observação sem julgamento; nutrologia: fome, satisfação e tolerâncias individuais; medicina regenerativa não intervencionista: relaxamento e recuperação; gerenciamento do peso: afastar culpa e regras rígidas, com suporte profissional quando necessário.",
+      "morning": "Faça um escaneamento corporal de três a cinco minutos, sentado ou deitado: note áreas confortáveis, tensas ou cansadas sem tentar corrigir tudo. Escolha um movimento suave de que goste, como alongar, balançar os braços ou caminhar lentamente.",
+      "throughoutDay": [
+        "Faça um check-in corporal: ‘o que estou sentindo e de que preciso agora — alimento, água, pausa, movimento ou apoio?’.",
+        "Antes de comer, observe fome e emoções sem usar isso como regra para deixar de se alimentar; faça os primeiros bocados com menos distrações quando possível.",
+        "Observe por um minuto algo da natureza — céu, planta, luz ou som externo — ou uma imagem que transmita calma, se não puder sair."
+      ],
+      "evening": "Registre uma sensação corporal, uma emoção e uma necessidade atendida no dia. Termine com uma frase de autocompaixão; se a introspecção aumentar ansiedade, mantenha os olhos abertos, encurte a prática ou escolha uma atividade neutra.",
+      "reflection": "Que sinal do meu corpo aprendi a reconhecer hoje, e como posso respondê-lo sem julgamento?"
+    },
+    {
+      "day": 13,
+      "title": "Força Resiliente",
+      "theme": "A proposta integra força funcional e resiliência, preservando recuperação. Saúde mental/psiquiatria: reformular desafios com autocompaixão; nutrologia: alimentação suficiente para a rotina; medicina regenerativa não intervencionista: progressão gradual e descanso; gerenciamento do peso: valorizar funcionalidade e bem-estar, não compensação por exercício.",
+      "morning": "Escolha uma sequência de baixo impacto por até cinco minutos: levantar e sentar de uma cadeira firme, empurrar a parede, marchar com apoio ou mobilizar braços. Use amplitude confortável, ritmo em que consiga falar e interrompa em caso de dor, tontura ou falta de ar.",
+      "throughoutDay": [
+        "Diante de um desafio, nomeie-o e formule uma pergunta útil: ‘qual é o próximo passo pequeno e seguro?’.",
+        "Faça uma pausa funcional adaptada, como levantar-se, alongar-se ou caminhar poucos passos; pessoas com limitação de mobilidade podem usar movimentos de mãos, tornozelos ou ombros sentadas.",
+        "Planeje uma refeição ou lanche que seja suficiente e prático para sua rotina, sem usar suplementos ou estimulantes como substitutos de alimentação ou descanso."
+      ],
+      "evening": "Reconheça uma ação de força física, mental ou emocional realizada no dia e pratique relaxamento leve, como alongamento confortável ou música calma. Não transforme cansaço em obrigação de treino; recuperação também faz parte da progressão.",
+      "reflection": "Qual desafio de hoje mostrou uma capacidade que eu já tenho, e que adaptação torna meu próximo passo mais sustentável?"
+    },
+    {
+      "day": 14,
+      "title": "Integração e Planejamento da Próxima Semana",
+      "theme": "O fechamento consolida autonomia e personalização. Saúde mental/psiquiatria: observar padrões e pedir apoio quando necessário; nutrologia: identificar escolhas que trazem conforto e regularidade; medicina regenerativa não intervencionista: priorizar recuperação e sinais do corpo; gerenciamento do peso: definir metas de processo inclusivas e sem práticas compensatórias.",
+      "morning": "Faça um check-in de três minutos: como estão mente, corpo, sono e disposição? Escolha uma prática segura que funcionou na semana — atenção, luz diurna, refeição consciente, movimento leve ou pausa — e adapte-a ao dia de hoje.",
+      "throughoutDay": [
+        "Observe um padrão pessoal: qual situação facilita ou dificulta um hábito, sem se rotular como sucesso ou fracasso.",
+        "Em uma refeição, registre brevemente como se sentiu antes e depois, considerando saciedade, prazer, digestão e contexto; use isso como informação, não como regra rígida.",
+        "Escolha uma dose de movimento ou recuperação que seja compatível com seu estado atual e com as orientações de sua equipe de saúde."
+      ],
+      "evening": "Defina três práticas pequenas para a próxima semana, uma de saúde mental, uma de nutrição e uma de recuperação/movimento. Deixe jejum, frio, suplementação, técnicas respiratórias intensas e treino vigoroso fora do plano padrão; só os inclua mediante avaliação profissional individual.",
+      "reflection": "Quais três hábitos são realmente possíveis na minha vida atual, e que apoio ou ajuste preciso para mantê-los com segurança?"
+    }
+  ]
+}

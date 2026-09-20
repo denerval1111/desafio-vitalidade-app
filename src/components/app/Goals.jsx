@@ -1,0 +1,30 @@
+import { useState } from 'react'
+import { Target } from 'lucide-react'
+import { Badge } from '@/components/ui/badge.jsx'
+import { Button } from '@/components/ui/button.jsx'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.jsx'
+import { Input } from '@/components/ui/input.jsx'
+import { Label } from '@/components/ui/label.jsx'
+import { Progress } from '@/components/ui/progress.jsx'
+import { Textarea } from '@/components/ui/textarea.jsx'
+
+const emptyGoal = { title: '', description: '', type: 'habit', targetDays: '30', initialValue: '', targetValue: '' }
+
+export function Goals({ longTermGoals, onAddGoal, onNotice }) {
+  const [goal, setGoal] = useState(emptyGoal)
+  const isResult = goal.type === 'result'
+  const ready = goal.title.trim() && goal.targetDays && (!isResult || (goal.initialValue && goal.targetValue))
+  const submit = () => {
+    if (!ready) return
+    const created = onAddGoal({ ...goal, targetDays: Number(goal.targetDays), initialValue: Number(goal.initialValue), targetValue: Number(goal.targetValue) })
+    if (created) { setGoal(emptyGoal); onNotice('Meta adicionada com sucesso.') }
+  }
+
+  return (
+    <main className="p-6 pb-24"><header className="mb-5 text-center"><Target className="mx-auto h-7 w-7 text-emerald-600" aria-hidden="true" /><h1 className="mt-2 text-2xl font-bold text-slate-900">Metas</h1><p className="mt-1 text-sm text-slate-600">Consistência e resultados são acompanhados de formas diferentes.</p></header>
+      <Card className="mb-4"><CardHeader><CardTitle className="text-base">Marcos da jornada</CardTitle></CardHeader><CardContent className="grid grid-cols-2 gap-3">{longTermGoals.predefined.map((goalItem) => <div key={goalItem.id} className="rounded-xl bg-slate-50 p-3"><p className="font-semibold text-slate-800">{goalItem.title}</p><p className="mt-1 text-xs text-slate-500">{goalItem.completed ? 'Concluída' : `${goalItem.remainingDays} registros restantes`}</p><Progress value={goalItem.progress} className="mt-3 h-2" /></div>)}</CardContent></Card>
+      <Card className="mb-4"><CardHeader><CardTitle className="text-base">Suas metas</CardTitle></CardHeader><CardContent>{longTermGoals.custom.length === 0 ? <p className="text-center text-sm text-slate-500">Ainda não há metas personalizadas.</p> : <div className="space-y-3">{longTermGoals.custom.map((goalItem) => <div key={goalItem.id} className="rounded-xl border border-slate-200 p-3"><div className="flex items-start justify-between gap-2"><div><p className="font-semibold text-slate-800">{goalItem.title}</p>{goalItem.description && <p className="mt-1 text-sm text-slate-600">{goalItem.description}</p>}</div><Badge variant={goalItem.completed ? 'default' : 'outline'}>{goalItem.completed ? 'Concluída' : goalItem.type === 'result' ? 'Em acompanhamento' : 'Em andamento'}</Badge></div>{goalItem.type === 'result' ? <p className="mt-3 text-xs text-slate-500">Peso inicial: {goalItem.initialValue ?? '—'} kg · Atual: {goalItem.currentValue ?? '—'} kg · Alvo: {goalItem.targetValue ?? '—'} kg</p> : <p className="mt-3 text-xs text-slate-500">Meta de consistência: {goalItem.targetDays} registros · {goalItem.remainingDays} restantes</p>}<Progress value={goalItem.progress} className="mt-2 h-2" /></div>)}</div>}</CardContent></Card>
+      <Card><CardHeader><CardTitle className="text-base">Criar nova meta</CardTitle></CardHeader><CardContent className="space-y-4"><fieldset><legend className="mb-2 text-sm font-medium text-slate-700">Tipo de meta</legend><div className="grid grid-cols-2 gap-2"><button type="button" aria-pressed={goal.type === 'habit'} onClick={() => setGoal((value) => ({ ...value, type: 'habit' }))} className={`rounded-lg border p-3 text-left text-sm ${goal.type === 'habit' ? 'border-emerald-500 bg-emerald-50 text-emerald-900' : 'border-slate-200'}`}><strong className="block">Hábito</strong><span className="text-xs">Ex.: caminhar com regularidade</span></button><button type="button" aria-pressed={goal.type === 'result'} onClick={() => setGoal((value) => ({ ...value, type: 'result' }))} className={`rounded-lg border p-3 text-left text-sm ${goal.type === 'result' ? 'border-emerald-500 bg-emerald-50 text-emerald-900' : 'border-slate-200'}`}><strong className="block">Resultado</strong><span className="text-xs">Ex.: acompanhar peso</span></button></div></fieldset><div><Label htmlFor="goal-title">Título</Label><Input id="goal-title" value={goal.title} onChange={(event) => setGoal((value) => ({ ...value, title: event.target.value }))} placeholder={isResult ? 'Ex.: Chegar a 70 kg' : 'Ex.: Caminhar com regularidade'} /></div><div><Label htmlFor="goal-description">Descrição (opcional)</Label><Textarea id="goal-description" value={goal.description} onChange={(event) => setGoal((value) => ({ ...value, description: event.target.value }))} placeholder="Por que esta meta é importante?" /></div>{isResult && <div className="grid grid-cols-2 gap-3"><div><Label htmlFor="initial-weight">Peso inicial (kg)</Label><Input id="initial-weight" type="number" inputMode="decimal" min="1" step="0.1" value={goal.initialValue} onChange={(event) => setGoal((value) => ({ ...value, initialValue: event.target.value }))} /></div><div><Label htmlFor="target-weight">Peso-alvo (kg)</Label><Input id="target-weight" type="number" inputMode="decimal" min="1" step="0.1" value={goal.targetValue} onChange={(event) => setGoal((value) => ({ ...value, targetValue: event.target.value }))} /></div></div>}<div><Label htmlFor="goal-days">Prazo de referência (dias)</Label><Input id="goal-days" type="number" inputMode="numeric" min="1" value={goal.targetDays} onChange={(event) => setGoal((value) => ({ ...value, targetDays: event.target.value }))} /><p className="mt-1 text-xs text-slate-500">Nas metas de resultado, o prazo orienta o plano, mas só o registro do peso confirma a conclusão.</p></div><Button type="button" disabled={!ready} onClick={submit} className="w-full bg-emerald-600 hover:bg-emerald-700">Adicionar meta</Button></CardContent></Card>
+    </main>
+  )
+}

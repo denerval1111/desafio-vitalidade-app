@@ -1,10 +1,10 @@
 # 🌟 Desafio Vitalidade - Aplicativo Web
 
-> Aplicativo para acompanhamento dos 30 dias do Desafio Vitalidade, focado em longevidade saudável através dos 4 pilares fundamentais.
+> Aplicativo de apoio a hábitos para a jornada de 30 dias do Desafio Vitalidade, organizado em quatro semanas práticas e quatro pilares de bem-estar.
 
 ## 📱 Sobre o Projeto
 
-O **Desafio Vitalidade** é um aplicativo web desenvolvido para acompanhar a jornada de transformação de 30 dias, baseado nos 4 pilares da longevidade saudável. O aplicativo oferece funcionalidades avançadas de acompanhamento de longo prazo, sistema de metas personalizadas e gamificação motivacional.
+O **Desafio Vitalidade** reúne ferramentas práticas de manhã, durante o dia, no fim do dia e de reflexão. Os registros são armazenados localmente no navegador e o aplicativo permite exportar, importar ou apagar esses dados. Ele serve como apoio à construção de hábitos e não substitui avaliação, diagnóstico ou prescrição individual.
 
 ### 🎯 Público-Alvo
 - Homens e mulheres acima de 40 anos
@@ -16,14 +16,14 @@ O **Desafio Vitalidade** é um aplicativo web desenvolvido para acompanhar a jor
 ### 📊 4 Pilares Fundamentais
 
 1. **🧬 Medicina Regenerativa**
-   - Jejum intermitente (16h)
-   - Sono adequado (7-9h)
-   - Hidratação (2L+)
+   - Rotina alimentar adaptada à orientação individual
+   - Sono e recuperação observados com gentileza
+   - Hidratação consciente
 
 2. **🥗 Nutrologia**
    - Refeições mediterrânea/asiática/brasileira
-   - Suplementos recomendados
-   - Exercício físico
+   - Suplementos somente conforme orientação individual
+   - Movimento e exercício adaptados
 
 3. **🧠 Psiquiatria**
    - Meditação/mindfulness
@@ -39,8 +39,13 @@ O **Desafio Vitalidade** é um aplicativo web desenvolvido para acompanhar a jor
 - **Ciclos de 30 dias** com acompanhamento automático
 - **Metas pré-definidas:** 30, 90, 180, 360 dias
 - **Metas personalizadas** criadas pelo usuário
+- **Metas de hábito e de resultado separadas:** uma meta de peso só é concluída pelo registro do valor-alvo, não pelo simples fim do prazo
 - **Progresso visual** por pilar e geral
 - **Sistema de conquistas** motivacional
+
+### 🗓️ Ferramentas das 4 Semanas
+
+A tela **Semana** apresenta uma jornada prática completa de 30 dias. As Semanas 1 a 4 oferecem sete dias cada, com prática pela manhã, micropráticas ao longo do dia, encerramento e reflexão. Os Dias 29 e 30 consolidam os aprendizados e ajudam a iniciar o próximo ciclo com uma continuidade possível.
 
 ### 📱 Interface e Navegação
 
@@ -53,12 +58,13 @@ O **Desafio Vitalidade** é um aplicativo web desenvolvido para acompanhar a jor
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **React 18** - Framework principal
+- **React 19** - Framework principal
 - **Vite** - Build tool e dev server
 - **Tailwind CSS** - Estilização
 - **Lucide React** - Ícones
 - **LocalStorage** - Persistência de dados
-- **PWA Ready** - Instalável como app
+- **Vitest** - Testes das regras de negócio
+- **Playwright** - Testes de ponta a ponta
 
 ## 🚀 Como Executar
 
@@ -123,9 +129,10 @@ desafio-vitalidade-app/
 ## 📱 Funcionalidades Técnicas
 
 ### Persistência de Dados
-- **LocalStorage** para armazenamento local
-- **Backup automático** do progresso
-- **Privacidade total** - dados não saem do dispositivo
+- **LocalStorage** para armazenamento no navegador atual
+- **Exportação e importação manual** de backup em JSON
+- **Exclusão local** pelo perfil
+- **Sem conta ou sincronização entre dispositivos** nesta versão
 
 ### Responsividade
 - **Mobile-first** design
@@ -133,14 +140,14 @@ desafio-vitalidade-app/
 - **Adaptável** a diferentes tamanhos de tela
 
 ### Performance
-- **Lazy loading** de componentes
-- **Otimização** de imagens
-- **Bundle splitting** automático
+- **Imagens WebP** redimensionadas para o tamanho de exibição
+- **Dependências reduzidas** para diminuir a superfície de atualização e auditoria
+- **Cache imutável** dos ativos de produção
 
 ## 🏆 Sistema de Pontuação
 
 - **10 pontos** por atividade dos pilares
-- **2-10 pontos** baseado no humor (Psiquiatria)
+- **Humor opcional e sem pontuação**, usado apenas como registro pessoal
 - **Cálculo automático** do progresso
 - **Estatísticas** por pilar e geral
 
@@ -151,11 +158,13 @@ desafio-vitalidade-app/
 - [x] Sistema de longo prazo
 - [x] Metas personalizadas
 - [x] Interface responsiva
+- [x] Check-in único por data com edição segura
+- [x] Exportação, importação e exclusão de dados locais
+- [x] Jornada prática completa das quatro semanas e fechamento dos 30 dias
 
 ### Próximas Versões
-- [ ] Exportação de relatórios
 - [ ] Notificações push
-- [ ] Modo offline
+- [ ] Modo offline (PWA ainda não implementado)
 - [ ] Integração com wearables
 
 ## 🤝 Contribuição
@@ -174,4 +183,3 @@ Este projeto é propriedade do **Desafio Vitalidade** e destinado exclusivamente
 ---
 
 **Desenvolvido com ❤️ para transformar vidas através da longevidade saudável**
-

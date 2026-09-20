@@ -1,7 +1,8 @@
-import { Award, BookOpen, CheckCircle, TrendingUp } from 'lucide-react'
+import { Award, BookOpen, CheckCircle, HeartPulse, TrendingUp } from 'lucide-react'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent } from '@/components/ui/card.jsx'
+import { WeeklyReview } from '@/components/app/WeeklyReview.jsx'
 
 function CycleProgress({ stats }) {
   const circumference = 2 * Math.PI * 54
@@ -13,17 +14,26 @@ function CycleProgress({ stats }) {
         <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" strokeDasharray={circumference} strokeDashoffset={offset} className="text-emerald-500 transition-all" />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <strong className="text-3xl text-slate-800">{stats.nextDayInCycle}</strong>
-        <span className="text-xs text-slate-500">próximo de 30</span>
+        <strong className="text-3xl text-slate-800">{stats.daysInCurrentCycle}</strong>
+        <span className="text-xs text-slate-500">de 30 dias</span>
       </div>
     </div>
   )
 }
 
-export function Dashboard({ userData, stats, onNavigate }) {
+function dailyGuidance(stats) {
+  if (!stats.totalDays) return 'Seu progresso começa com um registro possível hoje.'
+  if (!stats.hasCheckinToday && stats.recentDays === 0) return 'Que bom ter você de volta. Registre apenas o que foi possível hoje.'
+  if (stats.hasCheckinToday) return 'Seu check-in de hoje está salvo. Você pode ajustá-lo se quiser.'
+  if (stats.streak >= 3) return 'Você vem construindo um ritmo possível. Um pequeno registro hoje dá continuidade à jornada.'
+  return 'Escolha uma prática que caiba no seu dia. O cuidado não precisa ser perfeito para contar.'
+}
+
+export function Dashboard({ userData, stats, onNavigate, onSaveWeeklyReview }) {
   const nextGoal = [30, 90, 180, 360].find((goal) => goal > stats.totalDays)
   const date = new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })
   const checkinLabel = stats.hasCheckinToday ? 'Editar check-in de hoje' : 'Fazer check-in de hoje'
+  const topPillar = stats.topPillar
 
   return (
     <main className="p-6 pb-24">
@@ -37,7 +47,7 @@ export function Dashboard({ userData, stats, onNavigate }) {
         <CardContent className="pt-6 text-center">
           <p className="text-sm font-medium text-emerald-800">Progresso do ciclo atual</p>
           <CycleProgress stats={stats} />
-          <p className="text-sm text-slate-600">{stats.daysInCurrentCycle} de 30 dias registrados neste ciclo</p>
+          <p className="text-sm text-slate-600">{dailyGuidance(stats)}</p>
         </CardContent>
       </Card>
 
@@ -55,17 +65,19 @@ export function Dashboard({ userData, stats, onNavigate }) {
       <section className="mt-5 grid grid-cols-3 gap-3" aria-label="Resumo da jornada">
         {[
           ['Registros', stats.totalDays],
-          ['Pontos', stats.totalPoints],
+          ['Últimos 7 dias', stats.recentDays],
           ['Sequência', stats.streak],
         ].map(([label, value]) => (
           <Card key={label}><CardContent className="p-3 text-center"><strong className="block text-xl text-slate-800">{value}</strong><span className="text-xs text-slate-500">{label}</span></CardContent></Card>
         ))}
       </section>
 
+      {topPillar && <Card className="mt-5 border-sky-100 bg-sky-50"><CardContent className="flex gap-3 p-4"><HeartPulse className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" aria-hidden="true" /><div><p className="font-semibold text-sky-950">Presença no ciclo: {topPillar.shortLabel}</p><p className="mt-1 text-sm leading-relaxed text-sky-900">Este foi o pilar mais presente até aqui. Se fizer sentido, escolha outro pilar para acolher com uma prática pequena.</p></div></CardContent></Card>}
       {nextGoal && (
         <Card className="mt-5"><CardContent className="flex items-center justify-between p-4"><div><p className="font-semibold text-slate-800">Próximo marco: {nextGoal} dias</p><p className="text-sm text-slate-500">Faltam {nextGoal - stats.totalDays} registros</p></div><Badge variant="outline">{Math.round((stats.totalDays / nextGoal) * 100)}%</Badge></CardContent></Card>
       )}
       {stats.streak > 0 && <div className="mt-4 flex items-center gap-2 rounded-xl bg-orange-50 p-3 text-sm text-orange-900"><Award className="h-5 w-5" aria-hidden="true" /><span><strong>{stats.streak} dia{stats.streak === 1 ? '' : 's'} consecutivo{stats.streak === 1 ? '' : 's'}</strong> de prática registrada.</span></div>}
+      <WeeklyReview prompt={stats.reviewPrompt} onSave={onSaveWeeklyReview} />
     </main>
   )
 }

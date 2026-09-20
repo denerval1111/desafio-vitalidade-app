@@ -40,8 +40,11 @@ O **Desafio Vitalidade** reúne ferramentas práticas de manhã, durante o dia, 
 - **Metas pré-definidas:** 30, 90, 180, 360 dias
 - **Metas personalizadas** criadas pelo usuário
 - **Metas de hábito e de resultado separadas:** uma meta de peso só é concluída pelo registro do valor-alvo, não pelo simples fim do prazo
-- **Progresso visual** por pilar e geral
-- **Sistema de conquistas** motivacional
+- **Progresso em três visões:** ciclo, pilares e histórico
+- **Calendário de 30 dias** que reconhece registros sem tratar dias livres como falha
+- **Ritmo recente, sequência atual e melhor sequência** calculados a partir das datas reais dos check-ins
+- **Revisão semanal opcional** com reflexão e foco pequeno para os próximos dias
+- **Conquistas de processo** que valorizam primeiro passo, retomada e continuidade
 
 ### 🗓️ Ferramentas das 4 Semanas
 
@@ -49,11 +52,11 @@ A tela **Semana** apresenta uma jornada prática completa de 30 dias. As Semanas
 
 ### 📱 Interface e Navegação
 
-- **Dashboard principal** com progresso circular
+- **Dashboard principal** com progresso circular, ritmo recente e próximo passo
 - **Check-in diário** dos 4 pilares
-- **Tela de progresso** com estatísticas
+- **Tela de progresso** com ciclo, pilares, calendário e histórico semanal
 - **Sistema de metas** de longo prazo
-- **Conquistas e badges** motivacionais
+- **Conquistas e reflexão semanal** motivacionais
 - **Perfil do usuário** personalizável
 
 ## 🛠️ Tecnologias Utilizadas

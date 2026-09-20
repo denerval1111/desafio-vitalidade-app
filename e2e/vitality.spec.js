@@ -15,15 +15,14 @@ test('permite editar o único check-in do dia sem duplicar registros', async ({ 
   await page.getByLabel(/Rotina alimentar planejada/).check()
   await page.getByRole('button', { name: 'Salvar check-in' }).click()
   await expect(page.getByText('Ciclo 1 · 1 registro na jornada')).toBeVisible()
-  await expect(page.getByText('10', { exact: true })).toBeVisible()
+  await expect(page.getByText('Seu primeiro passo já conta')).toBeVisible()
 
   await page.getByRole('button', { name: 'Editar check-in de hoje' }).click()
   await page.getByLabel(/Refeição nutritiva e possível/).check()
   await page.getByRole('button', { name: 'Atualizar check-in' }).click()
 
   await expect(page.getByText('Ciclo 1 · 1 registro na jornada')).toBeVisible()
-  await expect(page.getByText('20', { exact: true })).toBeVisible()
-  await expect(page.getByText('Check-in atualizado. Seus pontos de hoje agora somam 20.')).toBeVisible()
+  await expect(page.getByText('Check-in atualizado. Seu registro de hoje agora soma 20 pontos.')).toBeVisible()
 })
 
 test('apresenta a primeira semana com orientações de uso responsável', async ({ page }) => {

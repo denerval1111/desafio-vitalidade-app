@@ -4,9 +4,16 @@ import {
   createDefaultUserData,
   createEmptyCheckin,
   deriveStats,
+  getCheckinFeedback,
   getLongTermGoals,
   saveCheckinForDate,
 } from './vitality.js'
+
+function checkinWithPractice(group, field) {
+  const checkin = createEmptyCheckin()
+  checkin[group][field] = true
+  return checkin
+}
 
 describe('regras de check-in', () => {
   it('não concede pontos somente por humor', () => {
@@ -32,14 +39,53 @@ describe('regras de check-in', () => {
   })
 
   it('calcula sequência a partir de datas reais e não de cliques', () => {
-    const checkin = createEmptyCheckin()
-    checkin.medicinaRegenerativa.hidratacao = true
+    const checkin = checkinWithPractice('medicinaRegenerativa', 'hidratacao')
     let data = saveCheckinForDate(createDefaultUserData(), '2026-09-18', checkin)
     data = saveCheckinForDate(data, '2026-09-19', checkin)
     data = saveCheckinForDate(data, '2026-09-20', checkin)
 
     expect(deriveStats(data, '2026-09-20').streak).toBe(3)
     expect(deriveStats(data, '2026-09-21').streak).toBe(0)
+  })
+})
+
+describe('métricas de progresso', () => {
+  it('calcula ritmo recente, melhor sequência e calendário do ciclo', () => {
+    let data = createDefaultUserData()
+    const dates = ['2026-09-14', '2026-09-15', '2026-09-16', '2026-09-17', '2026-09-18', '2026-09-19', '2026-09-20']
+    dates.forEach((date, index) => {
+      const practice = index % 2 === 0
+        ? checkinWithPractice('psiquiatria', 'meditacao')
+        : checkinWithPractice('nutrologia', 'refeicao')
+      data = saveCheckinForDate(data, date, practice)
+    })
+
+    const stats = deriveStats(data, '2026-09-20')
+    expect(stats.recentDays).toBe(7)
+    expect(stats.streak).toBe(7)
+    expect(stats.longestStreak).toBe(7)
+    expect(stats.currentCycleSlots.filter((slot) => slot.checkin)).toHaveLength(7)
+    expect(stats.reviewPrompt?.week).toBe(1)
+    expect(stats.topPillar?.key).toBe('psiquiatria')
+  })
+
+  it('não oferece novamente uma revisão semanal que foi salva ou dispensada', () => {
+    let data = createDefaultUserData()
+    for (let day = 14; day <= 20; day += 1) {
+      data = saveCheckinForDate(data, `2026-09-${day}`, checkinWithPractice('medicinaRegenerativa', 'sono'))
+    }
+    data.weeklyReviews = {
+      'cycle-1-week-1': { answer: 'Dormir melhor ajudou.', focus: 'Manter a rotina noturna.', dismissed: false },
+    }
+
+    expect(deriveStats(data, '2026-09-20').reviewPrompt).toBeNull()
+  })
+
+  it('acolhe a retomada após uma pausa sem tratar como falha', () => {
+    const initial = saveCheckinForDate(createDefaultUserData(), '2026-09-14', checkinWithPractice('nutrologia', 'refeicao'))
+    const updated = saveCheckinForDate(initial, '2026-09-20', checkinWithPractice('psiquiatria', 'gratidao'))
+
+    expect(getCheckinFeedback(initial, updated, '2026-09-20').title).toBe('Que bom ter você de volta')
   })
 })
 

@@ -17,6 +17,7 @@ function App() {
     userData,
     completeOnboarding,
     saveCheckin,
+    saveWeeklyReview,
     addCustomGoal,
     resetData,
     importData,
@@ -57,7 +58,12 @@ function App() {
   const handleSaveCheckin = () => {
     const result = saveCheckin(today, checkinData)
     setCurrentView('dashboard')
-    setNotice(result.edited ? `Check-in atualizado. Seus pontos de hoje agora somam ${result.points}.` : `Check-in salvo. Você registrou ${result.points} pontos hoje.`)
+    setNotice(`${result.feedback.title}. ${result.feedback.message}`)
+  }
+
+  const handleSaveWeeklyReview = (reviewKey, review) => {
+    saveWeeklyReview(reviewKey, review)
+    setNotice(review.dismissed ? 'Tudo bem. Você pode fazer a reflexão em outro momento.' : 'Sua reflexão foi guardada neste dispositivo.')
   }
 
   const handleExport = () => {
@@ -102,7 +108,7 @@ function App() {
   }
 
   const screens = {
-    dashboard: <Dashboard userData={userData} stats={stats} onNavigate={navigate} />,
+    dashboard: <Dashboard userData={userData} stats={stats} onNavigate={navigate} onSaveWeeklyReview={handleSaveWeeklyReview} />,
     checkin: <Checkin checkinData={checkinData} setCheckinData={setCheckinData} onSave={handleSaveCheckin} isEditing={stats.hasCheckinToday} stats={stats} />,
     learn: <WeekProgram suggestedDay={(stats.totalDays % 30) + 1} />,
     progress: <ProgressView stats={stats} longTermGoals={longTermGoals} achievements={achievements} />,

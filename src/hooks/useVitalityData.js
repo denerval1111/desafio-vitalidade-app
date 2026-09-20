@@ -3,6 +3,7 @@ import {
   createDefaultUserData,
   deriveStats,
   getAchievements,
+  getCheckinFeedback,
   getLocalDateKey,
   getLongTermGoals,
   normalizeGoal,
@@ -43,11 +44,28 @@ export function useVitalityData() {
   }
 
   const saveCheckin = (date, checkinData) => {
-    const existing = Boolean(userData.dailyProgress?.[date])
     const updated = saveCheckinForDate(userData, date, checkinData)
+    const feedback = getCheckinFeedback(userData, updated, date)
     const points = updated.dailyProgress[date].points
+    const edited = Boolean(userData.dailyProgress?.[date])
     persist(updated)
-    return { points, edited: existing }
+    return { points, edited, feedback }
+  }
+
+  const saveWeeklyReview = (reviewKey, review) => {
+    if (!reviewKey) return
+    persist((previous) => ({
+      ...previous,
+      weeklyReviews: {
+        ...previous.weeklyReviews,
+        [reviewKey]: {
+          answer: typeof review?.answer === 'string' ? review.answer.trim() : '',
+          focus: typeof review?.focus === 'string' ? review.focus.trim() : '',
+          dismissed: Boolean(review?.dismissed),
+          updatedAt: new Date().toISOString(),
+        },
+      },
+    }))
   }
 
   const addCustomGoal = (goal) => {
@@ -75,6 +93,7 @@ export function useVitalityData() {
     userData,
     completeOnboarding,
     saveCheckin,
+    saveWeeklyReview,
     addCustomGoal,
     resetData,
     importData,
